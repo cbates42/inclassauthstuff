@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CharacterModelStoreContainer" CdmEntityContainer="PROG455SP23Entities">
+    <EntitySetMapping Name="Characters">
+      <EntityTypeMapping TypeName="IsTypeOf(CharacterModel.Character)">
+        <MappingFragment StoreEntitySet="Characters">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Element_Type" ColumnName="Element_Type" />
+          <ScalarProperty Name="Job_Class" ColumnName="Job_Class" />
+          <ScalarProperty Name="ATK" ColumnName="ATK" />
+          <ScalarProperty Name="DEF" ColumnName="DEF" />
+          <ScalarProperty Name="Mana" ColumnName="Mana" />
+          <ScalarProperty Name="HP_Initial" ColumnName="HP_Initial" />
+          <ScalarProperty Name="HP_Max" ColumnName="HP_Max" />
+          <ScalarProperty Name="NPC" ColumnName="NPC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="IsTypeOf(CharacterModel.User)">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
